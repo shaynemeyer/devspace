@@ -17,9 +17,6 @@ export default function CategoryLabel({ category }: CategoryLabelProps) {
     Ruby: 'red',
   };
 
-  console.log({ category });
-  console.log(colorKey[category]);
-
   return (
     <div
       className={`px-2 py-1 bg-${colorKey[category]}-600 text-gray-100 font-bold rounded`}
