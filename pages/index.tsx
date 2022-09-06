@@ -1,12 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 import type { NextPage } from 'next';
-import Layout from '../components/Layout';
+import Layout from '@/components/Layout';
 import matter from 'gray-matter';
 import Link from 'next/link';
-import { Post } from '../models/post';
-import BlogPost from '../components/Post';
-import { sortByDate } from '../utils';
+import { Post } from '@/models/post';
+import BlogPost from '@/components/Post';
+import { sortByDate } from '@/utils/index';
 
 interface HomePageProps {
   posts: Post[];

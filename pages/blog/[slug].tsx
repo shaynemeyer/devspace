@@ -5,9 +5,9 @@ import matter from 'gray-matter';
 import { marked } from 'marked';
 import { GetServerSidePropsContext, InferGetStaticPropsType } from 'next';
 import { ParsedUrlQuery } from 'querystring';
-import Layout from '../../components/Layout';
+import Layout from '@/components/Layout';
 import Link from 'next/link';
-import CategoryLabel from '../../components/CategoryLabel';
+import CategoryLabel from '@/components/CategoryLabel';
 
 interface IParams extends ParsedUrlQuery {
   slug: string;

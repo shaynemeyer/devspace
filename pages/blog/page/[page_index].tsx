@@ -3,12 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import Layout from '@/components/Layout';
 import matter from 'gray-matter';
-import Link from 'next/link';
 import { Post } from '@/models/post';
 import BlogPost from '@/components/Post';
 import { POSTS_PER_PAGE } from '@/config/index';
 import { GetServerSidePropsContext } from 'next';
 import { ParsedUrlQuery } from 'querystring';
+import Pagination from '@/components/Pagination';
 
 interface IParams extends ParsedUrlQuery {
   page_index: string;
@@ -34,6 +34,8 @@ export default function BlogPage({
             <BlogPost key={post.slug} post={post} />
           ))}
         </div>
+
+        <Pagination currentPage={currentPage} numPages={numPages} />
       </>
     </Layout>
   );

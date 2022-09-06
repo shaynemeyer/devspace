@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import CategoryLabel from './CategoryLabel';
-import { Post } from '../models/post';
+import { Post } from '@/models/post';
 
 interface PostProps {
   post: Post;
